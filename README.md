@@ -5,7 +5,7 @@ Visualizzazione di un dataset multivariato con D3.js </b></h1><br>
 A questo link: https://progetto-infovis-moschemultivariate.netlify.app/ è possibile visualizzare e provare direttamente il progetto completo in esecuzione.
 
 <h3> > Caricamento del dataset ----------------------------------------------------------------</h3>
-Il dataset JSON è volutamente integrato direttamente nel codice (script.js) e non caricato come file esterno ".JSON" in modo che l'apertura dell'applicazione possa essere eseguita scaricando i tre file e aprendo il file "index.html" (via file://) direttamente via browser, senza avere così la necessità di avviare un server web HTTP (es. Live Server in Visual Studio Code).
+Il dataset JSON è volutamente integrato direttamente nel codice (script.js) e non caricato come file esterno ".json" in modo che l'apertura dell'applicazione possa essere eseguita scaricando i tre file e aprendo il file "index.html" (via file://) direttamente via browser, senza avere così la necessità di avviare un server web HTTP (es. Live Server in Visual Studio Code) per l'esecuzione completa.
 
 <h3> > Descrizione del progetto ----------------------------------------------------------------</h3>
 Questo progetto realizza, secondo le specifiche assegnate, una visualizzazione interattiva di un dataset multivariato utilizzando D3.js. Il dataset è composto da 10 casi, ciascuno con 6 variabili quantitative positive.
@@ -19,7 +19,7 @@ Ogni caso è rappresentato come una piccola mosca stilizzata (solo silhouette) d
 <br>
 Il cambiamento di configurazione avviene con animazioni fluide grazie a D3 transitions. Le scale D3 lineari rimappano automaticamente gli intervalli dei valori del dataset all’area visiva disponibile, garantendo adattabilità a valori arbitrari. 
 Ad ogni coppia di variabili, è associato un colore singolo attributo a tutte mosche che cambia dinamicamente per tutte le mosche ad ogni passaggio ad una nuova coppia di variabili. 
-Passando il mouse sopra una mosca, compariranno un tooltip le informazioni relative alla specifica mosca.
+Passando il mouse sopra una mosca, comparirà un tooltip con le informazioni relative alla specifica mosca.
 
 
 
