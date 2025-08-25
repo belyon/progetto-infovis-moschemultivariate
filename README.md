@@ -17,7 +17,7 @@ Ogni caso è rappresentato come una piccola mosca stilizzata (solo silhouette) d
   <li>Secondo click → x = var5, y = var6</li>
   <li>Terzo click → ritorno alla configurazione originale</li>
 <br>
-Il cambiamento di configurazione avviene con animazioni fluide grazie a D3 transitions. Le scale D3 lineari rimappano automaticamente gli intervalli dei valori del dataset all’area visiva disponibile, garantendo adattabilità a valori arbitrari.
+Il cambiamento di configurazione avviene con animazioni fluide grazie a D3 transitions. Le scale D3 lineari rimappano automaticamente gli intervalli dei valori del dataset all’area visiva disponibile, garantendo adattabilità a valori arbitrari. Ad ogni coppia di variabili, è associato un colore di mosche che cambia dinamicamente ad ogni passaggio ad una nuova coppia di variabili. Passando il mouse sopra un mosca senza clickcare, compariranno un tooltip con le informazioni della relativa mosca.
 
 
 
