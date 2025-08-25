@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosche in volo: una visualizzazione multivariata con D3.js</title>
+    
+    <!-- Link al file CSS esterno -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Link alla libreria D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <!-- Blocco Unico -->
+            <div class="main-panel">
+                <!-- Parte 1: Titolo e Tabella Dati -->
+                <h1>Progetto singolo InfoVis - Mosche in volo</h1>
+                <p>Dati multivariati utilizzati per la visualizzazione. Il dataset .JSON è integrato direttamente nel codice.</p>
+                <div class="data-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>V1</th>
+                                <th>V2</th>
+                                <th>V3</th>
+                                <th>V4</th>
+                                <th>V5</th>
+                                <th>V6</th>
+                            </tr>
+                        </thead>
+                        <tbody id="data-body">
+                            <!-- I dati verranno inseriti qui da JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Divisore -->
+                <hr class="section-divider">
+
+                <!-- Parte 2: Grafico -->
+                <div class="chart-body">
+                    <div id="chart"></div>
+                    <div class="legend">
+                        <h3>Legenda</h3>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #ff5252;"></div>
+                            <span>Configurazione 1 (V1-V2)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #4dffb8;"></div>
+                            <span>Configurazione 2 (V3-V4)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #ffcc00;"></div>
+                            <span>Configurazione 3 (V5-V6)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box Configurazione Corrente -->
+                <div class="config-info">
+                    <div>Configurazione corrente:</div>
+                    <div class="current-config">Variabili 1 e 2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIV per il Tooltip -->
+    <div class="tooltip"></div>
+
+    <!-- Link al file JavaScript esterno -->
+    <script src="script.js"></script>
+</body>
+</html>
